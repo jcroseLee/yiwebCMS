@@ -1,0 +1,147 @@
+
+.rich-text-editor-container {
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  transition: all 0.2s;
+}
+
+.rich-text-editor-container:focus-within {
+  border-color: #1677ff;
+  box-shadow: 0 0 0 2px rgba(5, 145, 255, 0.1);
+}
+
+.rich-text-editor-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 8px;
+  border-bottom: 1px solid #f0f0f0;
+  background-color: #fafafa;
+}
+
+.rich-text-editor-toolbar button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid transparent;
+  background: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #595959;
+  transition: all 0.2s;
+}
+
+.rich-text-editor-toolbar button:hover {
+  background-color: #f0f0f0;
+  color: #262626;
+}
+
+.rich-text-editor-toolbar button.is-active {
+  background-color: #e6f4ff;
+  color: #1677ff;
+}
+
+.rich-text-editor-toolbar .divider {
+  width: 1px;
+  background-color: #d9d9d9;
+  margin: 0 4px;
+}
+
+.rich-text-editor-content {
+  min-height: 400px;
+  max-height: 800px;
+  overflow-y: auto;
+  padding: 16px;
+}
+
+/* Tiptap Prose Mirror Styles */
+.ProseMirror {
+  outline: none;
+}
+
+.ProseMirror p {
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
+.ProseMirror h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 0.8em;
+  margin-bottom: 0.4em;
+}
+
+.ProseMirror h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 0.8em;
+  margin-bottom: 0.4em;
+}
+
+.ProseMirror h3 {
+  font-size: 1.17em;
+  font-weight: bold;
+  margin-top: 0.8em;
+  margin-bottom: 0.4em;
+}
+
+.ProseMirror ul, .ProseMirror ol {
+  padding-left: 1.5em;
+  margin-bottom: 1em;
+}
+
+.ProseMirror li {
+  margin-bottom: 0.2em;
+}
+
+.ProseMirror blockquote {
+  border-left: 3px solid #d9d9d9;
+  padding-left: 1em;
+  color: #8c8c8c;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.ProseMirror img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.ProseMirror pre {
+  background-color: #f5f5f5;
+  padding: 0.75em 1em;
+  border-radius: 4px;
+  font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+  overflow-x: auto;
+}
+
+.ProseMirror code {
+  background-color: #f5f5f5;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+  font-size: 0.9em;
+}
+
+.ProseMirror pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+.ProseMirror a {
+  color: #1677ff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.ProseMirror hr {
+  border: none;
+  border-top: 1px solid #d9d9d9;
+  margin: 2em 0;
+}
